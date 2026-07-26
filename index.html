@@ -116,7 +116,15 @@
   }
 
   /* ---------- gallery ---------- */
-  .gallery-band { background: var(--panel); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+  .fullbleed { width: 100vw; margin-left: calc(50% - 50vw); position: relative; }
+  .fullbleed img {
+    width: 100vw; display: block; aspect-ratio: 2.35 / 1; object-fit: cover; object-position: 50% 50%;
+    border-radius: 0; box-shadow: none;
+  }
+  .bleedcap {
+    font-family: 'Inter', sans-serif; font-size: 12.5px; color: var(--muted);
+    margin-top: 12px; letter-spacing: .01em;
+  }
   .gallery-lead { font-size: 19px; color: var(--muted); max-width: 640px; margin-bottom: 34px; }
   figure { margin: 0; }
   figure img { width: 100%; height: auto; display: block; border-radius: 2px; box-shadow: 0 14px 34px -22px rgba(31,29,26,.55); }
@@ -222,34 +230,17 @@
     <div class="prose">
       <div class="eyebrow">The short version</div>
       <p>I spent a decade building leadership programs for a workforce of thousands, then left to find out whether any of it survives contact with a business I have to fund myself. It mostly does. The parts that do not have been more instructive than the parts that do.</p>
-      <p>The work has been more consistent than my job titles suggest. A merger that put three universities in one room. A pandemic that sent an entire workforce home and then asked it to come partway back. First-year students who had not yet learned how to be students. Families standing in a parent's house deciding what to keep. And now a technology arriving faster than most people can absorb it. Different rooms, one problem: helping people keep their footing through a change they did not ask for.</p>
-      <p>AI is where that problem is hardest right now, so it is where most of my attention goes. It is my dissertation and it is also my daily operating problem. But the underlying work is older than the technology and it will outlast this particular version of it.</p>
+      <p>The work has been more consistent than my job titles suggest. A merger that put three universities in one room. A pandemic that sent a workforce home and then asked it to come partway back. First-year students who had not yet learned how to be students. Families standing in a parent's house deciding what to keep. And now a technology arriving faster than most people can absorb it. Different rooms, one problem: helping people keep their footing through a change they did not ask for. AI is where that problem is hardest right now, which is why it gets most of my attention.</p>
       <p>What I bring to a team is unusual in one specific way. Most people who can facilitate a room full of skeptical executives have never built an agentic workflow. Most people who have built one cannot facilitate the room. I do both, and I have the scar tissue from doing them at the same time.</p>
     </div>
   </div>
 </section>
 
-<div class="gallery-band">
-  <section>
-    <div class="wrap">
-      <div class="eyebrow">In the room</div>
-      <p class="gallery-lead">I emcee, I facilitate, I coach, and I officiate. A conference stage in front of a thousand people, a working session with reluctant managers, a garden where two people asked me to stand with them. The rooms change more than the work does.</p>
-      <figure>
-        <img src="stage-keynote.jpg" width="1600" height="1112" loading="lazy" alt="Paul Tonden speaking from a lectern on a large conference stage">
-        <figcaption>Emceeing the annual executive leadership conference at Strategic Education, 2023 to 2025.</figcaption>
-      </figure>
-      <div class="pair">
-        <figure>
-          <img src="stage-facilitating.jpg" width="900" height="1007" loading="lazy" alt="Paul Tonden facilitating a session on stage">
-          <figcaption>Facilitating a session for people leaders.</figcaption>
-        </figure>
-        <figure>
-          <img src="officiating.jpg" width="900" height="899" loading="lazy" alt="Paul Tonden officiating a wedding ceremony">
-          <figcaption>Officiating for Jon and Grace.</figcaption>
-        </figure>
-      </div>
-    </div>
-  </section>
+<figure class="fullbleed">
+  <img src="stage-keynote.jpg" width="1600" height="1112" loading="lazy" alt="Paul Tonden speaking from a lectern on a large conference stage">
+</figure>
+<div class="wrap">
+  <p class="bleedcap">Emceeing the annual executive leadership conference at Strategic Education, 2023 to 2025.</p>
 </div>
 
 <section id="work">
@@ -323,6 +314,23 @@
         <div class="thread-label">Teaching and conversation</div>
         <p>Executive education and leadership workshops through Paint It Black Design Group. Maxwell Leadership Certified Coach, Speaker and Trainer. HBDI and Everything DiSC certified practitioner. I emcee conferences, coach leaders one to one, and officiate weddings, which are three versions of the same job. I co-host the <a class="link" href="https://podcasts.apple.com/us/podcast/thought-partners-podcast/id1844474807" target="_blank" rel="noopener">Thought Partners Podcast</a> with <a class="link" href="https://edbuchanan.com/" target="_blank" rel="noopener">Ed Buchanan</a>, who also produces it, on strategy, leadership, and human-centered design.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="eyebrow">In the room</div>
+    <p class="gallery-lead">I emcee, I facilitate, I coach, and I officiate. The rooms change more than the work does.</p>
+    <div class="pair" style="margin-top:0">
+      <figure>
+        <img src="stage-facilitating.jpg" width="900" height="1007" loading="lazy" alt="Paul Tonden facilitating a session on stage">
+        <figcaption>Facilitating a session for people leaders.</figcaption>
+      </figure>
+      <figure>
+        <img src="officiating.jpg" width="900" height="899" loading="lazy" alt="Paul Tonden officiating a wedding ceremony">
+        <figcaption>Officiating for Jon and Grace.</figcaption>
+      </figure>
     </div>
   </div>
 </section>
