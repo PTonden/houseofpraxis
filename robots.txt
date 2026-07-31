@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Disallow: /Paul_Tonden_Resume_2026.pdf
